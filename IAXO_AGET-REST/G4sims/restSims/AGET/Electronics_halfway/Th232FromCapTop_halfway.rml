@@ -20,7 +20,7 @@
     <variable name="REST_DATAPATH" value="${HOME}/RPE_IAXO_REST_v2.2.10/data" overwrite="true" />
     <variable name="EXPERIMENT" value="IAXOD0" overwrite="false" />
     <variable name="VERSION" value="2.29" overwrite="false" />
-    <variable name="IAXOD0_PATH" value="${HOME}/RPE_IAXO_REST_v2.2.10/IAXOD0_AGET-REST" overwrite="true" />
+    <variable name="IAXOD0_PATH" value="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST" overwrite="true" />
     <variable name="IAXOD0_DATAPATH" value="${REST_DATAPATH}/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_G4PATH" value="${IAXOD0_PATH}/G4sims" overwrite="true" />
     <variable name="IAXOD0_GEOPATH" value="${IAXOD0_G4PATH}/geometry" overwrite="true" />
