@@ -98,16 +98,16 @@
     <variable name="Connector_z" value="6"/>
 
     <variable name="CapRect_x" value="22"/>
-    <variable name="CapRect_y" value="1"/>
+    <variable name="CapRect_y" value="4"/>
     <variable name="CapRect_z" value="10"/>
 
     <variable name="CapSquare_x" value="10"/>
-    <variable name="CapSquare_y" value="1"/>
+    <variable name="CapSquare_y" value="4"/>
     <variable name="CapSquare_z" value="10"/>
 
-    <variable name="ResCapRect_x" value="10"/>
-    <variable name="ResCapRect_y" value="1"/>
-    <variable name="ResCapRect_z" value="64"/>
+    <variable name="ResRect_x" value="22"/>
+    <variable name="ResRect_y" value="4"/>
+    <variable name="ResRect_z" value="20"/>
 
     <variable name="Chip_x" value="29"/>
     <variable name="Chip_y" value="2"/>
@@ -121,6 +121,7 @@
     <variable name="LeadHoleDetectorSize" value="150"/>
     <!-- <variable name="LeadTopThickness" value="50"/> -->
     <position name="LeadHolePipePos" unit="mm" x="0" y="0" z="LeadBoxSize/2."/>
+    <position name="LeadHoleAGETPos" unit="mm" x="AGET_pos_x" y="AGET_pos_y" z="AGET_pos_z-LeadBoxShift"/>
     <position name="LeadHoleRaquettePos" unit="mm" x="-(raquetteLength+10)/2." y="0" z="-chamberLength/2.-raquetteThickness/2.-LeadBoxShift"/>
 
     <!-- Scintillators -->

@@ -100,16 +100,16 @@
     <variable name="Connector_z" value="6"/>
 
     <variable name="CapRect_x" value="22"/>
-    <variable name="CapRect_y" value="1"/>
+    <variable name="CapRect_y" value="4"/>
     <variable name="CapRect_z" value="10"/>
 
     <variable name="CapSquare_x" value="10"/>
-    <variable name="CapSquare_y" value="1"/>
+    <variable name="CapSquare_y" value="4"/>
     <variable name="CapSquare_z" value="10"/>
 
-    <variable name="ResCapRect_x" value="10"/>
-    <variable name="ResCapRect_y" value="1"/>
-    <variable name="ResCapRect_z" value="64"/>
+    <variable name="ResRect_x" value="22"/>
+    <variable name="ResRect_y" value="4"/>
+    <variable name="ResRect_z" value="20"/>
 
     <variable name="Chip_x" value="29"/>
     <variable name="Chip_y" value="2"/>
