@@ -53,7 +53,7 @@
     <parameter name="user" value="${USER}"/>
     <parameter name="verboseLevel" value="3"/>
     <parameter name="overwrite" value="off" />
-    <parameter name="outputFile" value="Run_${runTYPE}_${runTag}_${runNumber}_Version_[VERSION].root" />
+    <parameter name="outputFile" value="Run_[runTYPE]_[runTag]_[runNumber]_Version_[VERSION].root" />
 </TRestRun>
 
 
