@@ -24,14 +24,14 @@
     <variable name="IAXOD0_DATAPATH" value="${REST_DATAPATH}/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_G4PATH" value="${IAXOD0_PATH}/G4sims" overwrite="true" />
     <variable name="IAXOD0_GEOPATH" value="${IAXOD0_G4PATH}/geometry" overwrite="true" />
-    <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />  <!-- Options: "Argon_AGET_halfway","Argon_AGET_closer" or "Argon_AGET_outside" -->
+    <variable name="IAXOD0_GEODIR" value="Argon_AGET_outside" overwrite="true" />  <!-- Options: "Argon_AGET_halfway","Argon_AGET_closer" or "Argon_AGET_outside" -->
 
     <!-- Default for G4 simulations (defined in .sh script)-->
    
     <variable name="REST_NEVENTS" value="250000000" overwrite="true" />
-    <variable name="REST_ISOTOPE" value="Th232" overwrite="true" /> <!-- Options: "Co60"(Res & Cap), "Cs137"(Res & Cap), "K40", "Ra226"(Res & Cap), "Ra228"(Only Chip), "Th228", "Th232"(Res & Cap), "U238" -->
-     <variable name="ELECTRONICS_COMPONENT" value="Res" overwrite="true" /> <!-- Options: "Chip", "Cap", "Res" --> 
-    <variable name="ELECTRONICS_POSITION" value="TopCentre" overwrite="true" /> <!-- Options: "<blank>"(Chip), "TopCentre", "BottomCentre", "TopCentre" --> 
+    <variable name="REST_ISOTOPE" value="Cs137" overwrite="true" /> <!-- Options: "Co60"(Res & Cap), "Cs137"(Res & Cap), "K40", "Ra226"(Res & Cap), "Ra228"(Only Chip), "Th228", "Th232"(Res & Cap), "U238" -->
+     <variable name="ELECTRONICS_COMPONENT" value="Cap" overwrite="true" /> <!-- Options: "Chip", "Cap", "Res" --> 
+    <variable name="ELECTRONICS_POSITION" value="BottomCentre" overwrite="true" /> <!-- Options: "<blank>"(Chip), "TopCentre", "BottomCentre", "TopCentre" --> 
     <variable name="REST_VOLUME" value="${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}PhysVolume" overwrite="true" />
 
     <variable name="DIR_DATA" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}" overwrite="true" /> 

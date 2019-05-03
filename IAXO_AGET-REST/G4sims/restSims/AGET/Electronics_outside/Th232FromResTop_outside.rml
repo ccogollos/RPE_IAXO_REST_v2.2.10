@@ -24,7 +24,7 @@
     <variable name="IAXOD0_DATAPATH" value="${REST_DATAPATH}/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_G4PATH" value="${IAXOD0_PATH}/G4sims" overwrite="true" />
     <variable name="IAXOD0_GEOPATH" value="${IAXOD0_G4PATH}/geometry" overwrite="true" />
-    <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />  <!-- Options: "Argon_AGET_halfway","Argon_AGET_closer" or "Argon_AGET_outside" -->
+    <variable name="IAXOD0_GEODIR" value="Argon_AGET_outside" overwrite="true" />  <!-- Options: "Argon_AGET_halfway","Argon_AGET_closer" or "Argon_AGET_outside" -->
 
     <!-- Default for G4 simulations (defined in .sh script)-->
    
