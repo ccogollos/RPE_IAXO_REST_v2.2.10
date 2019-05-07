@@ -30,7 +30,7 @@
 
     <variable name="IAXOD0_GAS" value="Argon-Isobutane 2Pct 10-10E3V/cm" overwrite="false" />
 
-    <variable name="READOUT_ROOTFILE" value="IAXOD0_Readout.root" overwrite="false" /> 
+    <variable name="READOUT_ROOTFILE" value="readouts.root" overwrite="false" /> 
     <variable name="READOUT_NAME" value="IAXOD0_Readout_final" overwrite="false" /> 
 
 <!-- Global parameters -->
@@ -59,7 +59,7 @@
     <parameter name="outputFile" value="Run_[fRunType]_[fRunTag]_[fRunNumber]_Version_[VERSION].root" />
 
     <TRestGas name="Argon-Isobutane 2Pct 10-10E3Vcm" pressure="0.5" file="${REST_PATH}/inputData/definitions/gases.rml"/>
-    <addMetadata type="TRestReadout" name="IAXOD0_Readout_final" file="${IAXOD0_G4PATH}/restProcesses/readouts.root"/> 
+    <addMetadata type="TRestReadout" name="IAXOD0_Readout_final" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/readouts.root"/> 
 
     <!-- Setting source config files -->
     <parameter name="gasFile" value="${REST_PATH}/inputData/definitions/gases.rml" />
