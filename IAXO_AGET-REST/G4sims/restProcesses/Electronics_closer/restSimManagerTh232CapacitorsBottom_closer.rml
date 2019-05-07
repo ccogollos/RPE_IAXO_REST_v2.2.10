@@ -24,6 +24,7 @@
 
     <variable name="IAXOD0_G4PATH" value="${IAXOD0_PATH}/G4sims" overwrite="false" />
     <variable name="IAXOD0_GEOPATH" value="${IAXOD0_G4PATH}/geometry" overwrite="false" />
+    <variable name="IAXOD0_PROCESSPATH" value="${IAXOD0_G4PATH}/restProcesses" overwrite="false" />
 
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_closer" overwrite="false" />  
     <variable name="DIR_DATA" value="TrackAnalysis" overwrite="false" />
@@ -59,12 +60,12 @@
     <parameter name="outputFile" value="Run_[fRunType]_[fRunTag]_[fRunNumber]_Version_[VERSION].root" />
 
     <TRestGas name="Argon-Isobutane 2Pct 10-10E3Vcm" pressure="0.5" file="${REST_INPUTDATA}/definitions/gases.rml"/>
-    <addMetadata type="TRestReadout" name="IAXOD0_Readout_final" file="${IAXOD0_G4PATH}/restProcesses/readouts.root"/> 
+    <addMetadata type="TRestReadout" name="IAXOD0_Readout_final" file="${IAXOD0_PROCESSPATH}/${READOUT_ROOTFILE}"/> 
 
     <!-- Setting source config files -->
     <parameter name="gasFile" value="${REST_PATH}/data/definitions/gases.rml" />
-    <parameter name="readoutFile" value="${IAXOD0_G4PATH}/restProcesses/readouts.root" />
-    <parameter name="processesFile" value="${IAXOD0_G4PATH}/restProcesses/G4processes.rml" />
+    <parameter name="readoutFile" value="${IAXOD0_PROCESSPATH}/${READOUT_ROOTFILE}" />
+    <parameter name="processesFile" value="${IAXOD0_PROCESSPATH}/G4processes.rml" />
     <parameter name="tasksFile" value="${IAXOD0_G4PATH}/restPlots/plots.rml" /> 
 
 </TRestRun>
