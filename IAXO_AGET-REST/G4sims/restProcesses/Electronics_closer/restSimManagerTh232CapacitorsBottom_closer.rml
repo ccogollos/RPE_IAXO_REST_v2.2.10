@@ -36,7 +36,7 @@
 <!-- Global parameters -->
     <parameter name="mainDataPath" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}" />
     <parameter name="gasDataPath" value="${REST_PATH}/inputData/gasFiles/" />
-    <parameter name="REST_INPUTDATA" value="${REST_PATH}/inputData/" />
+    <parameter name="REST_INPUTDATA" value="${REST_PATH}/data/" />
     <parameter name="verboseLevel" value="warning" /> %options are : silent, warning, info, debug
     
     <searchPath value="${REST_INPUTDATA}/definitions/"/>
