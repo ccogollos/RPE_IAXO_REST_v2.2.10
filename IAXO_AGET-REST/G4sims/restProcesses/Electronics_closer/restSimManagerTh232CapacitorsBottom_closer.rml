@@ -24,7 +24,7 @@
 
     <variable name="IAXOD0_G4PATH" value="${IAXOD0_PATH}/G4sims" overwrite="false" />
     <variable name="IAXOD0_GEOPATH" value="${IAXOD0_G4PATH}/geometry" overwrite="false" />
-    <variable name="IAXOD0_PROCESSPATH" value="${IAXOD0_G4PATH}/restProcesses" overwrite="false" />
+    <variable name="IAXOD0_PROCESSPATH" value="${IAXOD0_G4PATH}/restProcesses" overwrite="false" /> 
 
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_closer" overwrite="false" />  
     <variable name="DIR_DATA" value="TrackAnalysis" overwrite="false" />
@@ -55,17 +55,17 @@
     <parameter name="runTag" value="same"/>
     <parameter name="runDescription" value="same"/>
     <parameter name="user" value="${USER}"/>
-    <parameter name="verboseLevel" value="3"/>
+    <parameter name="verboseLevel" value="warning"/>
     <parameter name="overwrite" value="off" />
     <parameter name="outputFile" value="Run_[fRunType]_[fRunTag]_[fRunNumber]_Version_[VERSION].root" />
 
     <TRestGas name="Argon-Isobutane 2Pct 10-10E3Vcm" pressure="0.5" file="${REST_INPUTDATA}/definitions/gases.rml"/>
-    <addMetadata type="TRestReadout" name="IAXOD0_Readout_final" file="${IAXOD0_PROCESSPATH}/${READOUT_ROOTFILE}"/> 
+    <addMetadata type="TRestReadout" name="IAXOD0_Readout_final" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/readouts.root"/> 
 
     <!-- Setting source config files -->
     <parameter name="gasFile" value="${REST_PATH}/data/definitions/gases.rml" />
-    <parameter name="readoutFile" value="${IAXOD0_PROCESSPATH}/${READOUT_ROOTFILE}" />
-    <parameter name="processesFile" value="${IAXOD0_PROCESSPATH}/G4processes.rml" />
+    <parameter name="readoutFile" value="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/readouts.root" />
+    <parameter name="processesFile" value="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml" />
     <parameter name="tasksFile" value="${IAXOD0_G4PATH}/restPlots/plots.rml" /> 
 
 </TRestRun>
@@ -74,14 +74,12 @@
 
 <TRestProcessRunner name="restSimAnalysis" title="restSimAnalysis">
 
-    <parameter name="inputFile" value="${REST_INPUTFILE}"/>
+    <!-- <parameter name="inputFile" value="/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th232_CapBottomCentre/Run_SIMULATION_Th232fromCapBottomCentre_-0001_Version_2.29.root"/> -->
 
-    <parameter name="inputAnalysis" value="off"/>
-    <parameter name="inputEvent" value="on"/>
-    <parameter name="outputEvent" value="on"/>
 
-    <parameter name="firstEntry" value="0" />
-    <parameter name="lastEntry" value="0" />
+
+    <parameter name="firstEntry" value="1" />
+    <parameter name="lastEntry" value="" />
     <parameter name="eventsToProcess" value="" />
     <parameter name="pureAnalysisOutput" value="OFF" />
 
@@ -94,15 +92,15 @@
         <!-- Hits Analysis -->
         <addProcess type="TRestG4toHitsProcess" name="G4ToHits" value="ON" file="G4processes.rml" />
         <addProcess type="TRestElectronDiffusionProcess" name="IAXOD0_Ar2Iso_1.4bar" value="ON" file="G4processes.rml" />
-        <addProcess type="TRestHitsReductionProcess" name="hitsReduction-IAXOD0"  value="ON" file="G4processes.rml" />
+        <addProcess type="TRestHitsReductionProcess" name="hitsReduction-IAXOD0"  value="OFF" file="G4processes.rml" />
         <addProcess type="TRestHitsAnalysisProcess" name="hitsAna" value="ON" file="G4processes.rml" />
 
         <!-- Tracks Analysis -->
-        <addProcess type="TRestHitsToTrackProcess" name="hitsToTrack" value="ON" file="G4processes.rml" />  
+        <addProcess type="TRestHitsToTrackProcess" name="hitsToTrack" value="OFF" file="G4processes.rml" />  
         <addProcess type="TRestTrackReductionProcess" name="trackReduction-IAXOD0"  value="OFF" file="G4processes.rml" />
         <addProcess type="TRestTrackPathMinimizationProcess" name="trackPathMinimization-Template" value="OFF" file="G4processes.rml" />
         <addProcess type="TRestTrackReconnectionProcess" name="trackReconnection-Template" value="OFF" file="G4processes.rml" />
-        <addProcess type="TRestTrackAnalysisProcess" name="tckAna" value="ON" file="G4processes.rml" />
+        <addProcess type="TRestTrackAnalysisProcess" name="tckAna" value="OFF" file="G4processes.rml" />
 
 </TRestProcessRunner>
 
