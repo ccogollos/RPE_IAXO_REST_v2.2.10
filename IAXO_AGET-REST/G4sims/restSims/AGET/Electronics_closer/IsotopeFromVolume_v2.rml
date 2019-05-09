@@ -56,7 +56,7 @@
 <TRestG4Metadata name="restG4 Simulation run"  title="${REST_ISOTOPE} from ${REST_VOLUME}">
 
     <parameter name="geometryPath" value="${IAXOD0_GEOPATH}/${IAXOD0_GEODIR}" />
-    <parameter name="gdml_file" value="IAXOD0_Setup_Vac_Cone.gdml"/>
+    <parameter name="gdml_file" value="IAXOD0_Setup_AGET.gdml"/>
     <parameter name="maxTargetStepSize" value="200" units="um" />
     <parameter name="subEventTimeDelay" value="100" units="us" />
 
