@@ -175,12 +175,12 @@
         <parameter name="cylinderFiducialization" value="false" />
         <!-- <parameter name="fiducial_R" value="49" units="mm" /> -->
         <parameter name="fiducial_R" value="48mm" />
-        <observable name="isInsideCylindricalVolume" value="OFF" />
-        <observable name="nInsideCylindricalVolume" value="OFF" />
-        <observable name="energyInsideCylindricalVolume" value="OFF" />
-        <observable name="distanceToCylinderWall" value="OFF" />
-        <observable name="distanceToCylinderTop" value="OFF" />
-        <observable name="distanceToCylinderBottom" value="OFF" />
+        <observable name="isInsideCylindricalVolume" value="ON" />
+        <observable name="nInsideCylindricalVolume" value="ON" />
+        <observable name="energyInsideCylindricalVolume" value="ON" />
+        <observable name="distanceToCylinderWall" value="ON" />
+        <observable name="distanceToCylinderTop" value="ON" />
+        <observable name="distanceToCylinderBottom" value="ON" />
         <observable name="xMeanInCylinder" value="OFF" />
         <observable name="yMeanInCylinder" value="OFF" />
         <observable name="zMeanInCylinder" value="OFF" />
