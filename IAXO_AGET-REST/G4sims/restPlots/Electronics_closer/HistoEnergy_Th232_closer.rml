@@ -18,7 +18,7 @@
 <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Run_TRACKANALYSIS_same_-0001_Version_2.root" />
 
 <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
-<canvas size="(600,800)" divide="(2,2)"   save="${DIR_PLOT}/" />
+<canvas size="(600,800)" divide="(3,2)"   save="${DIR_PLOT}/" />
 
 <globalCut name="nTracks_XYZ" condition="<2" value="OFF"/> 
 <globalCut name="gasVolumeEDep" condition="<10" value="OFF"/>
