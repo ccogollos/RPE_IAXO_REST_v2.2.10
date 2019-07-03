@@ -524,7 +524,7 @@
           <position name="ResTopCentrePosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z+CapRect_z/2*1.2+ResRect_z/2.*1.2"/>
         </physvol>
 
-        <physvol name="ChipVolume">
+        <physvol name="ChipPhysVolume">
           <volumeref ref="ChipVolume"/>
           <position name="ChipPosition"  x="AGET_pos_x" y="AGET_pos_y+AGET_size_y/2." z="AGET_pos_z-CapRect_z/2.-Chip_z/2.*1.2"/>
         </physvol>
