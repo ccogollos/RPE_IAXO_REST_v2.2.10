@@ -30,7 +30,7 @@
    
     <variable name="REST_NEVENTS" value="2500000" overwrite="true" />
     <variable name="REST_ISOTOPE" value="U238" overwrite="true" /> <!-- Options: "Co60"(Res & Cap), "Cs137"(Res & Cap), "K40", "Ra226"(Res & Cap), "Ra228"(Only Chip), "Th228", "Th232"(Res & Cap), "U238" -->
-     <variable name="ELECTRONICS_COMPONENT" value="Chip" overwrite="true" /> <!-- Options: "Chip", "Cap", "Res" --> 
+    <variable name="ELECTRONICS_COMPONENT" value="Chip" overwrite="true" /> <!-- Options: "Chip", "Cap", "Res" --> 
     <variable name="ELECTRONICS_POSITION" value="" overwrite="true" /> <!-- Options: "<blank>"(Chip), "TopCentre", "BottomCentre", "TopCentre" --> 
     <variable name="REST_VOLUME" value="${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}PhysVolume" overwrite="true" />
 

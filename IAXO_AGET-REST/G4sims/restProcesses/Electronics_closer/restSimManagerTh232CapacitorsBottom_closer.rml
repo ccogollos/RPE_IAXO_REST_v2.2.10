@@ -26,7 +26,14 @@
     <variable name="IAXOD0_GEOPATH" value="${IAXOD0_G4PATH}/geometry" overwrite="false" />
     <variable name="IAXOD0_PROCESSPATH" value="${IAXOD0_G4PATH}/restProcesses" overwrite="false" /> 
 
-    <variable name="IAXOD0_GEODIR" value="Argon_AGET_closer" overwrite="false" />  
+    <variable name="IAXOD0_GEODIR" value="Argon_AGET_closer" overwrite="false" />
+
+    <variable name="REST_ISOTOPE" value="Th232" overwrite="true" /> <!-- Options: "Co60"(Res & Cap), "Cs137"(Res & Cap), "K40", "Ra226"(Res & Cap), "Ra228"(Only Chip), "Th228", "Th232"(Res & Cap), "U238" -->
+    <variable name="ELECTRONICS_COMPONENT" value="Cap" overwrite="true" /> <!-- Options: "Chip", "Cap", "Res" --> 
+    <variable name="ELECTRONICS_POSITION" value="BottomCentre" overwrite="true" /> <!-- Options: "<blank>"(Chip), "TopCentre", "BottomCentre", "TopCentre" --> 
+    <variable name="REST_VOLUME" value="${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}PhysVolume" overwrite="true" />
+    <variable name="DIR_SIM" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}" overwrite="true" />
+
     <variable name="DIR_DATA" value="TrackAnalysis" overwrite="false" />
 
     <variable name="IAXOD0_GAS" value="Argon-Isobutane 2Pct 10-10E3V/cm" overwrite="false" />
@@ -35,7 +42,7 @@
     <variable name="READOUT_NAME" value="IAXOD0_Readout_final" overwrite="false" /> 
 
 <!-- Global parameters -->
-    <parameter name="mainDataPath" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}" />
+    <parameter name="mainDataPath" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}" />
     <parameter name="gasDataPath" value="${REST_PATH}/data/gasFiles/" />
     <parameter name="REST_INPUTDATA" value="${REST_PATH}/data/" />
     <parameter name="verboseLevel" value="warning" /> %options are : silent, warning, info, debug
@@ -47,12 +54,12 @@
 <TRestRun name="Electronics Background Model" title="Simulations ${EXPERIMENT}. Version ${VERSION}.">
     <parameter name="experiment" value="${EXPERIMENT}"/>
     <parameter name="runType" value="TrackAnalysis"/>
+    <parameter name="runNumber" value="auto"/>
     <parameter name="readOnly" value="false" />
-    <parameter name="runNumber" value="same"/>
-    <parameter name="runTag" value="same"/>
-    <parameter name="runDescription" value="same"/>
+    <parameter name="runTag" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}"/>
+    <parameter name="runDescription" value="We analyse tracks from ${REST_ISOTOPE} decays originated at ${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}."/>
     <parameter name="user" value="${USER}"/>
-    <parameter name="verboseLevel" value="warning"/>
+    <parameter name="verboseLevel" value="3"/>
     <parameter name="overwrite" value="off" />
     <parameter name="outputFile" value="Run_[fRunType]_[fRunTag]_[fRunNumber]_Version_[VERSION].root" />
 
