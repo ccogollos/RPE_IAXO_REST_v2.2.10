@@ -1,0 +1,5 @@
+#!bin/bash
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerTh232ResistancesTop_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th232_ResTopCentre/Run_SIMULATION_Th232fromResTopCentre_-0001_Version_2.29.root
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerTh228CapacitorsBottom_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th228_CapBottomCentre/Run_SIMULATION_Th228fromCapBottomCentre_-0001_Version_2.29.root
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerTh226CapacitorsTop_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Ra226_CapTopCentre/Run_SIMULATION_Ra226fromCapTopCentre_-0001_Version_2.29.root
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerK40ResistancesTop_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/K40_ResTopCentre/Run_SIMULATION_K40fromResTopCentre_-0001_Version_2.29.root

@@ -1,0 +1,5 @@
+#!bin/bash
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerU238ResistancesTop_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_ResTopCentre/Run_SIMULATION_U238fromResTopCentre_-0001_Version_2.29.root
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerCo60ResistancesTop_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Co60_ResTopCentre/Run_SIMULATION_Co60fromResTopCentre_-0001_Version_2.29.root
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerCs137ResistancesTop_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Cs137_ResTopCentre/Run_SIMULATION_Cs137fromResTopCentre_-0001_Version_2.29.root
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerK40Chip_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/K40_Chip/Run_SIMULATION_K40fromChip_-0001_Version_2.29.root
