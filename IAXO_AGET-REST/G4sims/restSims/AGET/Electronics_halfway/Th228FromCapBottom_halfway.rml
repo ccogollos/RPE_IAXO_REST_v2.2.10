@@ -30,8 +30,8 @@
    
     <variable name="REST_NEVENTS" value="250000000" overwrite="true" />
     <variable name="REST_ISOTOPE" value="Th228" overwrite="true" /> <!-- Options: "Co60"(Res & Cap), "Cs137"(Res & Cap), "K40", "Ra226"(Res & Cap), "Ra228"(Only Chip), "Th228", "Th232"(Res & Cap), "U238" -->
-     <variable name="ELECTRONICS_COMPONENT" value="Cap" overwrite="true" /> <!-- Options: "Chip", "Cap", "Res" --> 
-    <variable name="ELECTRONICS_POSITION" value="BottomCentre" overwrite="true" /> <!-- Options: "<blank>"(Chip), "TopCentre", "BottomCentre", "TopCentre" --> 
+    <variable name="ELECTRONICS_COMPONENT" value="Cap" overwrite="true" /> <!-- Options: "Chip", "Cap", "Res" --> 
+    <variable name="ELECTRONICS_POSITION" value="BottomCentre" overwrite="true" /> <!-- Options: "<blank>"(Chip), "TopCentre", "BottomCentre" --> 
     <variable name="REST_VOLUME" value="${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}PhysVolume" overwrite="true" />
 
     <variable name="DIR_DATA" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}" overwrite="true" /> 
@@ -88,17 +88,16 @@
    <storage sensitiveVolume="gas">
         <parameter name="energyRange" value="(0,5)" units="GeV" />
         <activeVolume name="gas" chance="1"/>		 	<!-- Volume 0 -->
-        <activeVolume name="vetoFront" chance="1"/>	 	<!-- Volume 1 -->
-        <activeVolume name="vetoBack" chance="1"/>	 	<!-- Volume 2 -->
-        <activeVolume name="vetoTop" chance="1"/>	 	<!-- Volume 3 -->
-        <activeVolume name="vetoBottom" chance="1"/>	 	<!-- Volume 4 -->
-        <activeVolume name="vetoEast" chance="1"/>		<!-- Volume 5 -->
-        <activeVolume name="vetoWest" chance="1"/>		<!-- Volume 6 -->
-        <activeVolume name="LeadShielding" chance="1"/> 	<!-- Volume 7 --> 
-	<activeVolume name="mylarCat" chance="1"/>		<!-- Volume 8 --> 
-	<activeVolume name="CuCathodePattern" chance="1"/>	<!-- Volume 9 -->  	
+        <!-- <activeVolume name="vetoFront" chance="1"/> -->	 	<!-- Volume 1 -->
+        <!-- <activeVolume name="vetoBack" chance="1"/>	--> 	<!-- Volume 2 -->
+        <!-- <activeVolume name="vetoTop" chance="1"/> -->	 	<!-- Volume 3 -->
+        <!-- <activeVolume name="vetoBottom" chance="1"/> -->	 	<!-- Volume 4 -->
+        <!-- <activeVolume name="vetoEast" chance="1"/> -->		<!-- Volume 5 -->
+        <!-- <activeVolume name="vetoWest" chance="1"/> -->		<!-- Volume 6 -->
+        <!-- <activeVolume name="LeadShielding" chance="1"/> --> 	<!-- Volume 7 --> 
+		<!-- <activeVolume name="mylarCat" chance="1"/> -->		<!-- Volume 8 --> 
+		<!-- <activeVolume name="CuCathodePattern" chance="1"/> -->	<!-- Volume 9 -->  	
     </storage>
-
 </TRestG4Metadata>
 
 <TRestPhysicsLists name="default" title="First physics list implementation." verboseLevel="debug" >
