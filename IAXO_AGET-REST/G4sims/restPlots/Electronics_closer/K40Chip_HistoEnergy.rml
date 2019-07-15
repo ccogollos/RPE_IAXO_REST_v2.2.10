@@ -12,7 +12,7 @@
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_closer" overwrite="true" />   <!-- options "Argon" or "Neon" -->
     <variable name="DIR_DATA" value="TrackAnalysis" overwrite="true" />
     <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_DATA}/Plots" overwrite="true" />
-    <variable name="label" value="Th232CapBottomCentre" overwrite="true" />
+    <variable name="label" value="K40Chip" overwrite="true" />
 </globals>
 
 <addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Run_TRACKANALYSIS_${label}_-0001_Version_2.root" />
