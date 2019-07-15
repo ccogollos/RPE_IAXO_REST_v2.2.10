@@ -1,0 +1,4 @@
+#!bin/bash
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerU238Chip_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_Chip/Run_SIMULATION_U238fromChip_-0001_Version_2.29.root
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerTh228ResistancesTop_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th228_ResTopCentre/Run_SIMULATION_Th228fromResTopCentre_-0001_Version_2.29.root
+restManager --c ~/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/Electronics_closer/ restSimManagerCo60CapacitorsBottom_closer.rml --f ~/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Co60_CapBottomCentre/Run_SIMULATION_Co60fromCapBottomCentre_-0001_Version_2.29.root
