@@ -64,7 +64,7 @@ void histoSum() {
     Double_t int_total=0, int_error_total=0;
     
    
-    output.open("/home/cristian/RPE_IAXO_REST_v2.2.10/scripts/histoResults.txt","a");
+    output.open("/home/cristian/RPE_IAXO_REST_v2.2.10/scripts/histoResults.txt");
 
     for(i=0; i<nlines; i++)
     {
@@ -115,7 +115,7 @@ void histoSum() {
 
         cout << "MaxY : "  << MaxY[i] << endl;
         
-        fprintf(output,"%s %.2lf %.2lf %.0lf %.2lf %.2lf %.2lf %lf %lf\n", file, b[i], w[i], ie[i], ac[i], iener, fener, integral[i], ierror[i] );
+        //fprintf(output,"%s %.2lf %.2lf %.0lf %.2lf %.2lf %.2lf %lf %lf\n", file, b[i], w[i], ie[i], ac[i], iener, fener, integral[i], ierror[i] );
 
 
         //cout<<"Maximum "<<MaxY[i]<<" entries "<<NEntries[i]<<endl;
