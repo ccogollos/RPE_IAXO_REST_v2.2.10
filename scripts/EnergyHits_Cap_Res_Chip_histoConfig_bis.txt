@@ -27,4 +27,3 @@ FileName____contamination(Bq/m2)____surface(m2)____initial_events____Target_weig
 /home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_CapBottomCentre/TrackAnalysis/Plots/U238_CapBottomCentre_AGET_closer_EGasEvents.root 0.0104 21 2500000 6.76 U238_Cap_BottomCentre_Bckgnd
 /home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_CapTopCentre/TrackAnalysis/Plots/U238_CapTopCentre_AGET_closer_EGasEvents.root 0.0104 64 2500000 6.76 U238_Cap_TopCentre_Bckgnd
 /home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_ResTopCentre/TrackAnalysis/Plots/U238_ResTopCentre_AGET_closer_EGasEvents.root 0.000852 128 2500000 6.76 U238_Res_TopCentre_Bckgnd
-/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_Chip/TrackAnalysis/Plots/U238_Chip_AGET_closer_EGasEvents.root 0.00877 1 2500000 6.76 U238_Chip_Bckgnd
