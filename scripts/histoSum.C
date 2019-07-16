@@ -74,7 +74,7 @@ void histoSum() {
         cout<<"file "<<file<<endl;
     
         f[i]=new TFile(file,"read");
-        f[i]->GetObject("Energyingas",c[i])
+        f[i]->GetObject("Energyingas",c[i]);
 
         cout<<"listado "<<endl;
 
