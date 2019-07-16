@@ -1,8 +1,8 @@
 // histograms filled and drawn in a loop
-#include<iostream.h>
-#include<fstream>
-#include<iomanip>
-#include<string>
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <string>
 
 
 void histoSum() {
