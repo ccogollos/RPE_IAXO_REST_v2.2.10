@@ -64,7 +64,7 @@ void histoSum() {
     Double_t int_total=0, int_error_total=0;
     
    
-    output=fopen("/home/cristian/RPE_IAXO_REST_v2.2.10/scripts/histoResults.txt","a");
+    output.open("/home/cristian/RPE_IAXO_REST_v2.2.10/scripts/histoResults.txt","a");
 
     for(i=0; i<nlines; i++)
     {
@@ -133,7 +133,7 @@ void histoSum() {
      MaxY[i]= h[i]->GetBinContent(h[i]->GetMaximumBin());
     }
 
-    fclose(output);
+    output.close();
 
     for(i=0; i<nlines; i++)
     {
