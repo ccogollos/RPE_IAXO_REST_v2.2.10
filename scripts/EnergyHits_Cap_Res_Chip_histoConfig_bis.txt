@@ -1,0 +1,34 @@
+Number_of_files_to_be_included
+22
+
+Integration_from__to_(keV)
+0.1 8
+
+Energy_resolution___at___(keV)
+
+FileName____contamination(Bq/m2)____surface(m2)____initial_events____Target_weight(cm2)____Name
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Co60_CapBottomCentre/Plots/TrackAnalysis/Co60_CapBottomCentre_AGET_closer_EGasEvents.root 0.000036 21 2500000 6.76 Co40_Cap_BottomCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Co60_CapTopCentre/Plots/TrackAnalysis/Co60_CapTopCentre_AGET_closer_EGasEvents.root 0.000036 64 2500000 6.76 Co40_Cap_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Co60_ResTopCentre/Plots/TrackAnalysis/Co60_ResTopCentre_AGET_closer_EGasEvents.root 0.0000021 128 2500000 6.76 Co40_Res_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Cs137_CapBottomCentre/Plots/TrackAnalysis/Cs137_CapBottomCentre_AGET_closer_EGasEvents.root 0.000043 21 2500000 6.76 Cs137_Cap_BottomCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Cs137_CapBottomCentre/Plots/TrackAnalysis/Cs137_CapTopCentre_AGET_closer_EGasEvents.root 0.000043 21 2500000 6.76 Cs137_Cap_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Cs137_ResTopCentre/Plots/TrackAnalysis/Cs137_ResTopCentre_AGET_closer_EGasEvents.root 0.0000015 128 2500000 6.76 Cs137_Res_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/K40_CapBottomCentre/Plots/TrackAnalysis/K40_CapBottomCentre_AGET_closer_EGasEvents.root 0.00529 21 2500000 6.76 K40_Cap_BottomCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/K40_CapTopCentre/Plots/TrackAnalysis/K40_CapTopCentre_AGET_closer_EGasEvents.root 0.00529 64 2500000 6.76 K40_Cap_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/K40_ResTopCentre/Plots/TrackAnalysis/K40_ResTopCentre_AGET_closer_EGasEvents.root 0.000029 128 2500000 6.76 K40_Res_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/K40_Chip/Plots/TrackAnalysis/K40_Chip_AGET_closer_EGasEvents.root 0.00083 1 2500000 6.76 K40_Chip_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Ra226_CapBottomCentre/Plots/TrackAnalysis/Ra226_CapBottomCentre_AGET_closer_EGasEvents.root 0.00529 21 2500000 6.76 Ra226_Cap_BottomCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Ra226_CapTopCentre/Plots/TrackAnalysis/Ra226_CapTopCentre_AGET_closer_EGasEvents.root 0.00529 64 2500000 6.76 Ra226_Cap_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Ra226_Chip/Plots/TrackAnalysis/Ra226_Chip_AGET_closer_EGasEvents.root 0.00048 1 2500000 6.76 Ra226_Cap_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th228_CapBottomCentre/Plots/TrackAnalysis/Th228_CapBottomCentre_AGET_closer_EGasEvents.root 0.00875 21 2500000 6.76 Th228_Cap_BottomCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th228_CapTopCentre/Plots/TrackAnalysis/Th228_CapTopCentre_AGET_closer_EGasEvents.root 0.00875 64 2500000 6.76 Th228_Cap_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th228_ResTopCentre/Plots/TrackAnalysis/Th228_ResTopCentre_AGET_closer_EGasEvents.root 0.0000041 128 2500000 6.76 Th228_Res_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th228_Chip/Plots/TrackAnalysis/Th228_Chip_AGET_closer_EGasEvents.root 0.00047 1 2500000 6.76 Th228_Chip_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Ra228_Chip/Plots/TrackAnalysis/Ra228_Chip_AGET_closer_EGasEvents.root 0.00016 1 2500000 6.76 Ra228_Chip_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th232_ResTopCentre/Plots/TrackAnalysis/Th232_ResTopCentre_AGET_closer_EGasEvents.root 0.000014 128 2500000 6.76 Th232_Res_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th232_CapTopCentre/Plots/TrackAnalysis/Th232_CapTopCentre_AGET_closer_EGasEvents.root 0.000014 128 2500000 6.76 Th232_Cap_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th232_CapBottomCentre/Plots/TrackAnalysis/Th232_CapBottomCentre_AGET_closer_EGasEvents.root 0.000014 128 2500000 6.76 Th232_Cap_BottomCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_CapBottomCentre/Plots/TrackAnalysis/U238_CapBottomCentre_AGET_closer_EGasEvents.root 0.0104 21 2500000 6.76 U238_Cap_BottomCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_CapTopCentre/Plots/TrackAnalysis/U238_CapTopCentre_AGET_closer_EGasEvents.root 0.0104 64 2500000 6.76 U238_Cap_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_ResTopCentre/Plots/TrackAnalysis/U238_ResTopCentre_AGET_closer_EGasEvents.root 0.000852 128 2500000 6.76 U238_Res_TopCentre_Bckgnd
+/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/U238_Chip/Plots/TrackAnalysis/U238_Chip_AGET_closer_EGasEvents.root 0.00877 1 2500000 6.76 U238_Chip_Bckgnd
