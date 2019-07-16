@@ -74,13 +74,12 @@ void histoSum() {
         cout<<"file "<<file<<endl;
     
         f[i]=new TFile(file,"read");
-        c[i] = (TCanvas*)f[i]->Get("combined");
-        c[i]->GetListOfPrimitives()->ls();
+        f[i]->GetObject("Energyingas",c[i])
 
         cout<<"listado "<<endl;
 
         // h[i] = (TH1D*)c[i]->GetPrimitive("Energyingas");
-        h[i] = ((TH1D*)(((TPad *)c[i]->FindObject("combined_1"))->GetPrimitive("Energyingas")));
+        h[i] = (TH1D*)c[i]->GetPrimitive("Energyingas");
         //h[i]->Draw();
 
         cout << "-----------------------" << endl;
