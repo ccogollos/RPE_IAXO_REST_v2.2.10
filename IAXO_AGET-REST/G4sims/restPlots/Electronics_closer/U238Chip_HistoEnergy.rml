@@ -11,7 +11,7 @@
     <variable name="IAXOD0_DATAPATH" value="/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_closer" overwrite="true" />   <!-- options "Argon" or "Neon" -->
     <variable name="DIR_DATA" value="TrackAnalysis" overwrite="true" />
-    <variable name="label" value="Th232_CapBottomCentre" overwrite="true" />
+    <variable name="label" value="U238_Chip" overwrite="true" />
     <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Plots" overwrite="true" />
 </globals>
 
