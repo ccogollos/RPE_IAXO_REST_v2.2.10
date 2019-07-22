@@ -59,7 +59,7 @@
     <parameter name="runTag" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}"/>
     <parameter name="runDescription" value="We analyse tracks from ${REST_ISOTOPE} decays originated at ${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}."/>
     <parameter name="user" value="${USER}"/>
-    <parameter name="verboseLevel" value="3"/>
+    <parameter name="verboseLevel" value="warning"/>
     <parameter name="overwrite" value="off" />
     <parameter name="outputFile" value="Run_[fRunType]_[fRunTag]_[fRunNumber]_Version_[VERSION].root" />
 
