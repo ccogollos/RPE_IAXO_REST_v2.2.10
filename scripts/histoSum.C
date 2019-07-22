@@ -78,9 +78,7 @@ void histoSum() {
 
         cout<<"listado "<<endl;
 
-        // h[i] = (TH1D*)c[i]->GetPrimitive("Energyingas");
         h[i] = (TH1D*)c[i]->GetPrimitive("Energyingas");
-        //h[i]->Draw();
 
         cout << "-----------------------" << endl;
         NEntries[i]=h[i]->GetEntries();
@@ -113,11 +111,6 @@ void histoSum() {
 
 
         cout << "MaxY : "  << MaxY[i] << endl;
-        
-        //fprintf(output,"%s %.2lf %.2lf %.0lf %.2lf %.2lf %.2lf %lf %lf\n", file, b[i], w[i], ie[i], ac[i], iener, fener, integral[i], ierror[i] );
-
-
-        //cout<<"Maximum "<<MaxY[i]<<" entries "<<NEntries[i]<<endl;
    
         delete[] file;
     }
@@ -146,34 +139,12 @@ void histoSum() {
     title->SetFillColor(16);
     title->SetTextFont(52);
     title->Draw();
-    auto leg = new TLegend(0.8,0.1,0.9,0.15);
     
     hsum->SetStats(0);
-    hsum->Draw("B");
+    hsum->Draw("HIST");
     hsum->GetYaxis()->SetTitle("counts/(keV*cm2*s)");
-    leg->AddEntry(hsum,"Total","l");
 
-//    for( i=0; i<nlines; i++)
-//    {  
-//        h[i]->SetStats(kFALSE);
-//       h[i]->SetLineColor(1+i);
-        //h[i]->SetLineColor(4+4*i);
-//	h[i]->SetMaximum(MaxY_s*1.1);
-        
-//        if(i==0)
-//        {   
-//            h[i]->Draw();
-//            h[i]->GetYaxis()->SetTitle("counts/keV/cm2/day");
-//        }
-
-//        else h[i]->Draw();
-     
-//        leg->AddEntry(h[i],name[i].c_str(),"l"); 
-//    }
-   
-
-//   leg->Draw();
-   cc->Update();
+    cc->Update();
  
     gBenchmark->Show("histoComp");
 }
