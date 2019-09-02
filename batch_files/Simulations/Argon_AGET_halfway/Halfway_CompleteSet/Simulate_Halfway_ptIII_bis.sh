@@ -1,21 +1,22 @@
 #!/bin/bash
-isotopes=("Ra226" "Th228")
+isotopes=("Th232" "U238")
 component=("Cap" "Res")
-
+position=("TopCentre" "BottomCentre")
 
 for iso in "${isotopes[@]}"
 do
-	if [ $iso == Ra226 ]
-			then
-				component=("Res")
-			else
-				position=("Cap" "Res")
-	fi
-
 	for comp in "${component[@]}"
 	do
 		if [ $comp == Cap ]
 		then
+			
+			if [ $iso == Th232 ]
+			then
+				component=("BottomCentre")
+			else
+				position=("TopCentre" "BottomCentre")
+			fi
+
 			for pos in "${position[@]}"
 			do
 				for (( i=1; i<=250; i++ ))
