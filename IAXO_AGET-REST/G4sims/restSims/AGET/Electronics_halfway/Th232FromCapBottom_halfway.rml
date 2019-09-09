@@ -88,15 +88,15 @@
    <storage sensitiveVolume="gas">
         <parameter name="energyRange" value="(0,5)" units="GeV" />
         <activeVolume name="gas" chance="1"/>		 	<!-- Volume 0 -->
-        <!-- <activeVolume name="vetoFront" chance="1"/> -->	 	<!-- Volume 1 -->
-        <!-- <activeVolume name="vetoBack" chance="1"/>	--> 	<!-- Volume 2 -->
-        <!-- <activeVolume name="vetoTop" chance="1"/> -->	 	<!-- Volume 3 -->
-        <!-- <activeVolume name="vetoBottom" chance="1"/> -->	 	<!-- Volume 4 -->
-        <!-- <activeVolume name="vetoEast" chance="1"/> -->		<!-- Volume 5 -->
-        <!-- <activeVolume name="vetoWest" chance="1"/> -->		<!-- Volume 6 -->
-        <!-- <activeVolume name="LeadShielding" chance="1"/> --> 	<!-- Volume 7 --> 
-		<!-- <activeVolume name="mylarCat" chance="1"/> -->		<!-- Volume 8 --> 
-		<!-- <activeVolume name="CuCathodePattern" chance="1"/> -->	<!-- Volume 9 -->  	
+         <activeVolume name="vetoFront" chance="1"/> 	 	<!-- Volume 1 -->
+         <activeVolume name="vetoBack" chance="1"/>	 	<!-- Volume 2 -->
+         <activeVolume name="vetoTop" chance="1"/> 	 	<!-- Volume 3 -->
+         <activeVolume name="vetoBottom" chance="1"/> 	 	<!-- Volume 4 -->
+         <activeVolume name="vetoEast" chance="1"/> 		<!-- Volume 5 -->
+         <activeVolume name="vetoWest" chance="1"/> 		<!-- Volume 6 -->
+         <activeVolume name="LeadShielding" chance="1"/>  	<!-- Volume 7 --> 
+		 <activeVolume name="mylarCat" chance="1"/> 		<!-- Volume 8 --> 
+		 <activeVolume name="CuCathodePattern" chance="1"/> 	<!-- Volume 9 -->  	
     </storage>
 
 </TRestG4Metadata>
