@@ -16,7 +16,7 @@
 </globals>
 
 
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Run_TRACKANALYSIS_${label}_-0001_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Run_TrackAnalysis_${label}_-0001_Version_2.root" />
 
 <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
 <canvas size="(600,800)"  save="${DIR_PLOT}/" />

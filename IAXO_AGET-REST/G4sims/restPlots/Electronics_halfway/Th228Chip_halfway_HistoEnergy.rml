@@ -7,8 +7,8 @@
 <TRestAnalysisPlot name="Template" title="Basic Plots">
 
 <globals>
-    <variable name="IAXOD0_PATH" value="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST" overwrite="true" />
-    <variable name="IAXOD0_DATAPATH" value="/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0" overwrite="true" />
+    <variable name="IAXOD0_PATH" value="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST" overwrite="true" />
+    <variable name="IAXOD0_DATAPATH" value="${HOME}/RPE_IAXO_REST_v2.2.10/data/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />   <!-- options "Argon" or "Neon" -->
     <variable name="DIR_DATA" value="TrackAnalysis" overwrite="true" />
     <variable name="label" value="Th228_Chip" overwrite="true" />
@@ -16,7 +16,7 @@
 </globals>
 
 
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Run_TRACKANALYSIS_${label}_-0001_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Run_TRACKANALYSIS_${label}_8_Version_2.root" />
 
 <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
 <canvas size="(600,800)"  save="${DIR_PLOT}/" />
