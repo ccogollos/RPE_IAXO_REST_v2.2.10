@@ -59,12 +59,12 @@
     <parameter name="runTag" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}"/>
     <parameter name="runDescription" value="We analyse tracks from ${REST_ISOTOPE} decays originated at ${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}."/>
     <parameter name="user" value="${USER}"/>
-    <parameter name="verboseLevel" value="warning"/>
+    <parameter name="verboseLevel" value="debug"/>
     <parameter name="overwrite" value="off" />
     <parameter name="outputFile" value="Run_[fRunType]_[fRunTag]_[fRunNumber]_Version_[VERSION].root" />
 
     <TRestGas name="Argon-Isobutane 2Pct 10-10E3Vcm" pressure="0.5" file="${REST_INPUTDATA}/definitions/gases.rml"/>
-    <addMetadata type="TRestReadout" name="IAXOD0_Readout_final" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/readouts.root"/> 
+    <addMetadata type="TRestReadout" name="IAXOD0_Readout_final" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/readouts.root"/> 
 
     <!-- Setting source config files -->
     <parameter name="gasFile" value="${REST_PATH}/data/definitions/gases.rml" />
@@ -91,20 +91,20 @@
     <!-- Adding processes -->
 
         <!-- Geant4 Analysis -->
-        <addProcess type="TRestGeant4AnalysisProcess" name="g4Ana" value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml" />
+        <addProcess type="TRestGeant4AnalysisProcess" name="g4Ana" value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml" />
 
         <!-- Hits Analysis -->
-        <addProcess type="TRestG4toHitsProcess" name="G4ToHits" value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
-        <addProcess type="TRestElectronDiffusionProcess" name="IAXOD0_Ar2Iso_1.4bar" value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
-        <addProcess type="TRestHitsReductionProcess" name="hitsReduction-IAXOD0"  value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
-        <addProcess type="TRestHitsAnalysisProcess" name="hitsAna" value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
+        <addProcess type="TRestG4toHitsProcess" name="G4ToHits" value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
+        <addProcess type="TRestElectronDiffusionProcess" name="IAXOD0_Ar2Iso_1.4bar" value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
+        <addProcess type="TRestHitsReductionProcess" name="hitsReduction-IAXOD0"  value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
+        <addProcess type="TRestHitsAnalysisProcess" name="hitsAna" value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
 
         <!-- Tracks Analysis -->
-        <addProcess type="TRestHitsToTrackProcess" name="hitsToTrack" value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />  
-        <addProcess type="TRestTrackReductionProcess" name="trackReduction-IAXOD0"  value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
-        <addProcess type="TRestTrackPathMinimizationProcess" name="trackPathMinimization-Template" value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
-        <addProcess type="TRestTrackReconnectionProcess" name="trackReconnection-Template" value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
-        <addProcess type="TRestTrackAnalysisProcess" name="tckAna" value="ON" file="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
+        <addProcess type="TRestHitsToTrackProcess" name="hitsToTrack" value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />  
+        <addProcess type="TRestTrackReductionProcess" name="trackReduction-IAXOD0"  value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
+        <addProcess type="TRestTrackPathMinimizationProcess" name="trackPathMinimization-Template" value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
+        <addProcess type="TRestTrackReconnectionProcess" name="trackReconnection-Template" value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
+        <addProcess type="TRestTrackAnalysisProcess" name="tckAna" value="ON" file="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml"  />
 
 </TRestProcessRunner>
 
@@ -120,7 +120,7 @@
 
  <globals>
     <parameter name="outputLevel" value="internalvar" /> %options are : nooutput(0), observable(1), internalvar(2), fulloutput(3)
-    <parameter name="verboseLevel" value="1" /> %options are : silent(0), essential(1), info(2), debug(3), extreme(4)
+    <parameter name="verboseLevel" value="3" /> %options are : silent(0), essential(1), info(2), debug(3), extreme(4)
     <searchPath value="$ENV{REST_INPUTDATA}/definitions/"/>
 </globals>
 
