@@ -11,17 +11,18 @@
     <variable name="IAXOD0_DATAPATH" value="${HOME}/RPE_IAXO_REST_v2.2.10/data/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="true" />   <!-- options "Argon" or "Neon" -->
     <variable name="DIR_DATA" value="TrackAnalysis" overwrite="true" />
-    <variable name="label" value="Cs137_ResTopCentre" overwrite="true" />
+    <variable name="label" value="Th232_CapTopCentre" overwrite="true" />
     <variable name="DIR_PLOT" value="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Plots" overwrite="true" />
 </globals>
 
 
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Run_TRACKANALYSIS_${label}_6_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${label}/${DIR_DATA}/Run_TRACKANALYSIS_${label}_1156_Version_2.root" />
 
 <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
 <canvas size="(600,800)"  save="${DIR_PLOT}/" />
 
-<plot name="Energy in gas" title="Deposited energy in gas" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/${label}_AGET_halfway_EGasEvents.root" value="ON" >
+<plot name="Energy in gas" title="Deposited energy in gas" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${DIR_PLOT}/${label}_AGET_halfway_ALLCUTS_EGasEvents.root" value="ON" >
+
     <!-- Track cuts -->
     <cut variable="tckAna_nTracks_XYZ" condition="==1" value="ON" />
 

@@ -1,0 +1,30 @@
+Number_of_files_to_be_included
+20
+
+Integration_from__to_(keV)
+0.1 8
+
+Energy_resolution___at___(keV)
+
+FileName____contamination(Bq/m2)____surface(m2)____initial_events____Target_weight(cm2)____Name
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Co60_CapBottomCentre/TrackAnalysis/Plots/Co60_CapBottomCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.000036 21 25000000 6.76 Co40_Cap_BottomCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Co60_CapTopCentre/TrackAnalysis/Plots/Co60_CapTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.000036 64 25000000 6.76 Co40_Cap_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Co60_ResTopCentre/TrackAnalysis/Plots/Co60_ResTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.0000021 128 25000000 6.76 Co40_Res_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/K40_CapBottomCentre/TrackAnalysis/Plots/K40_CapBottomCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.00529 21 25000000 6.76 K40_Cap_BottomCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/K40_CapTopCentre/TrackAnalysis/Plots/K40_CapTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.00529 64 25000000 6.76 K40_Cap_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/K40_Chip/TrackAnalysis/Plots/K40_Chip_AGET_halfway_EGasEvents_TRACKCUT.root 0.00083 1 25000000 6.76 K40_Chip_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Ra226_CapBottomCentre/TrackAnalysis/Plots/Ra226_CapBottomCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.00529 21 25000000 6.76 Ra226_Cap_BottomCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Ra226_CapTopCentre/TrackAnalysis/Plots/Ra226_CapTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.00529 64 25000000 6.76 Ra226_Cap_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Ra226_ResTopCentre/TrackAnalysis/Plots/Ra226_ResTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.00048 128 25000000 6.76 Ra226_Res_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Th228_CapBottomCentre/TrackAnalysis/Plots/Th228_CapBottomCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.00875 21 25000000 6.76 Th228_Cap_BottomCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Th228_CapTopCentre/TrackAnalysis/Plots/Th228_CapTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.00875 64 25000000 6.76 Th228_Cap_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Th228_ResTopCentre/TrackAnalysis/Plots/Th228_ResTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.0000041 128 25000000 6.76 Th228_Res_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Th228_Chip/TrackAnalysis/Plots/Th228_Chip_AGET_halfway_EGasEvents_TRACKCUT.root 0.00047 1 25000000 6.76 Th228_Chip_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Ra228_Chip/TrackAnalysis/Plots/Ra228_Chip_AGET_halfway_EGasEvents_TRACKCUT.root 0.00016 1 25000000 6.76 Ra228_Chip_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Th232_ResTopCentre/TrackAnalysis/Plots/Th232_ResTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.000014 128 25000000 6.76 Th232_Res_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Th232_CapTopCentre/TrackAnalysis/Plots/Th232_CapTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.000014 64 25000000 6.76 Th232_Cap_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/Th232_CapBottomCentre/TrackAnalysis/Plots/Th232_CapBottomCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.000014 21 25000000 6.76 Th232_Cap_BottomCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/U238_CapBottomCentre/TrackAnalysis/Plots/U238_CapBottomCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.0104 21 25000000 6.76 U238_Cap_BottomCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/U238_CapTopCentre/TrackAnalysis/Plots/U238_CapTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.0104 64 25000000 6.76 U238_Cap_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/U238_ResTopCentre/TrackAnalysis/Plots/U238_ResTopCentre_AGET_halfway_EGasEvents_TRACKCUT.root 0.000852 128 25000000 6.76 U238_Res_TopCentre_Bckgnd
+/home/ccogollos/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_halfway/U238_Chip/TrackAnalysis/Plots/U238_Chip_AGET_halfway_EGasEvents_TRACKCUT.root 0.00047 1 25000000 6.76 U238_Chip_Bckgnd
