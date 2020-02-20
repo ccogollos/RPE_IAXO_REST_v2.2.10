@@ -19,12 +19,12 @@
 </globals>
 
 
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${label}_1156_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_1156_Version_2.root" />
 
 <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
 <canvas size="(600,800)"  save="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_PLOT}/" />
 
-<plot name="Energy in gas" title="Deposited energy in gas" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_PLOT}/${label}_AGET_halfway_ALLCUTS_EGasEvents.root" value="ON" >
+<plot name="Energy in gas" title="Deposited energy in gas (Energy cuts considered)" xlabel="Energy(keV)" ylabel="Counts" logscale="false" save="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_PLOT}/${DIR_SIM}_SAFEC_ALLCUTS_EGasEvents.root" value="ON" >
 
     <!-- Track cuts -->
     <cut variable="tckAna_nTracks_XYZ" condition="==1" value="ON" />
