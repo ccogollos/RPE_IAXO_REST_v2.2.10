@@ -80,9 +80,9 @@
     </generator>
 
     <biasing value="off" type="virtualBox">
-        <biasingVolume size="2850" units="mm" position="(0,0,0)" units="mm" factor="10" energyRange="(2.4,5)" units="MeV" />
-        <biasingVolume size="2450" units="mm" position="(0,0,0)" units="mm" factor="10" energyRange="(2.4,5)" units="MeV" />
-        <biasingVolume size="2050" units="mm" position="(0,0,0)" units="mm" factor="10" energyRange="(2.4,5)" units="MeV" />
+        <biasingVolume size="2850mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV" />
+        <biasingVolume size="2450mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV" />
+        <biasingVolume size="2050mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV" />
     </biasing>
 
    <storage sensitiveVolume="gas">
