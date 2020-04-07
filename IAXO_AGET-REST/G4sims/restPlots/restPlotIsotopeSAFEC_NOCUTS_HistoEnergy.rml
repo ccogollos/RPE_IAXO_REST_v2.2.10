@@ -10,7 +10,7 @@
     <variable name="IAXOD0_PATH" value="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST" overwrite="true" />
     <variable name="IAXOD0_DATAPATH" value="${HOME}/RPE_IAXO_REST_v2.2.10/data/IAXOD0" overwrite="true" />
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="false" />   <!-- options "Argon" or "Neon" -->
-    <variable name="REST_ISOTOPE" value="Cs137" overwrite="false" /> <!-- Options: "Co60"(Res & Cap), "Cs137"(Res & Cap), "K40", "Ra226"(Res & Cap), "Ra228"(Only Chip), "Th228", "Th232"(Res & Cap), "U238" -->
+    <variable name="REST_ISOTOPE" value="Co60" overwrite="false" /> <!-- Options: "Co60"(Res & Cap), "Cs137"(Res & Cap), "K40", "Ra226"(Res & Cap), "Ra228"(Only Chip), "Th228", "Th232"(Res & Cap), "U238" -->
     <variable name="ELECTRONICS_COMPONENT" value="Cap" overwrite="false" /> <!-- Options: "Chip", "Cap", "Res" --> 
     <variable name="ELECTRONICS_POSITION" value="BottomCentre" overwrite="false" /> <!-- Options: "<blank>"(Chip), "BottomCentre"(Cap), "TopCentre" (Res & Cap) -->
     <variable name="DIR_SIM" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}" overwrite="true" />
@@ -19,12 +19,15 @@
 </globals>
 
 
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00022_Version_2.root" />
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00036_Version_2.root" />
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00044_Version_2.root" />
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00053_Version_2.root" />
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00062_Version_2.root" />
-<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00071_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00021_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00029_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00030_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00031_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00034_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00042_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00052_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00061_Version_2.root" />
+<addFile name="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_DATA}/Run_TRACKANALYSIS_${DIR_SIM}_00070_Version_2.root" />
 
 <parameter name="plotMode" value="add" /> <!-- plotModes available : compare, add -->
 <canvas size="(600,800)"  save="${IAXOD0_DATAPATH}/${IAXOD0_GEODIR}/${DIR_SIM}/${DIR_PLOT}/" />
