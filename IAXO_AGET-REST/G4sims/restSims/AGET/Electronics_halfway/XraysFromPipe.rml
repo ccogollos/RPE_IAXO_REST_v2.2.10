@@ -29,7 +29,7 @@
    
     <variable name="REST_NEVENTS" value="1000000" overwrite="true" />
 
-    <variable name="ENERGY_keV" value="10." overwrite="true" />  
+    <variable name="ENERGY_keV" value="10." overwrite="false" />  
 
     <variable name="POS_X" value="0" overwrite="false" />
     <variable name="POS_Y" value="0" overwrite="false" />
@@ -80,15 +80,9 @@
     </generator>
 
     <biasing value="off" type="virtualBox">
-<<<<<<< HEAD
         <biasingVolume size="2850mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV"  />
         <biasingVolume size="2450mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV"  />
         <biasingVolume size="2050mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV"  />
-=======
-        <biasingVolume size="2850mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV" />
-        <biasingVolume size="2450mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV" />
-        <biasingVolume size="2050mm" position="(0,0,0)mm" factor="10" energyRange="(2.4,5)MeV" />
->>>>>>> 7ea120b383e4afd8d4166114ff6d8f25bdd23351
     </biasing>
 
    <storage sensitiveVolume="gas">

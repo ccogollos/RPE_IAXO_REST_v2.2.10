@@ -27,7 +27,13 @@
     <variable name="IAXOD0_PROCESSPATH" value="${IAXOD0_G4PATH}/restProcesses" overwrite="false" /> 
 
     <variable name="IAXOD0_GEODIR" value="Argon_AGET_halfway" overwrite="false" />
-    <variable name="DIR_SIM" value="XRays" overwrite="true" />
+
+    <variable name="REST_ISOTOPE" value="Co60" overwrite="true" /> <!-- Options: "Co60"(Res & Cap), "Cs137"(Res & Cap), "K40", "Ra226"(Res & Cap), "Ra228"(Only Chip), "Th228", "Th232"(Res & Cap), "U238" -->
+    <variable name="ELECTRONICS_COMPONENT" value="Cap" overwrite="true" /> <!-- Options: "Chip", "Cap", "Res" --> 
+    <variable name="ELECTRONICS_POSITION" value="BottomCentre" overwrite="true" /> <!-- Options: "<blank>"(Chip), "BottomCentre"(Cap), "TopCentre" (Res & Cap) --> 
+    <variable name="REST_VOLUME" value="${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}PhysVolume" overwrite="true" />
+    <variable name="DIR_SIM" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}" overwrite="true" />
+
     <variable name="DIR_DATA" value="TrackAnalysis" overwrite="false" />
 
     <variable name="IAXOD0_GAS" value="Argon-Isobutane 2Pct 10-10E3V/cm" overwrite="false" />
@@ -45,13 +51,13 @@
 
 <!-- Run information -->
 
-<TRestRun name="XRays 10 keV events from pipe" title="Simulations ${EXPERIMENT}. Version ${VERSION}.">
+<TRestRun name="Electronics Background Model" title="Simulations ${EXPERIMENT}. Version ${VERSION}.">
     <parameter name="experiment" value="${EXPERIMENT}"/>
-    <parameter name="runType" value="TRACKANALYSIS"/>
+    <parameter name="runType" value="TrackAnalysis"/>
     <parameter name="runNumber" value="auto"/>
     <parameter name="readOnly" value="false" />
-    <parameter name="runTag" value="${ENERGY_keV}keV_XRays"/>
-    <parameter name="runDescription" value="We analyse tracks from ${ENERGY_keV} keV XRays coming from the Cu pipe."/>
+    <parameter name="runTag" value="${REST_ISOTOPE}_${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}"/>
+    <parameter name="runDescription" value="We analyse tracks from ${REST_ISOTOPE} decays originated at ${ELECTRONICS_COMPONENT}${ELECTRONICS_POSITION}."/>
     <parameter name="user" value="${USER}"/>
     <parameter name="verboseLevel" value="warning"/>
     <parameter name="overwrite" value="off" />
@@ -62,8 +68,8 @@
 
     <!-- Setting source config files -->
     <parameter name="gasFile" value="${REST_PATH}/data/definitions/gases.rml" />
-    <parameter name="readoutFile" value="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/readouts.root" />
-    <parameter name="processesFile" value="${HOME}/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml" />
+    <parameter name="readoutFile" value="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/readouts.root" />
+    <parameter name="processesFile" value="/home/cristian/RPE_IAXO_REST_v2.2.10/IAXO_AGET-REST/G4sims/restProcesses/G4processes.rml" />
     <parameter name="tasksFile" value="${IAXOD0_G4PATH}/restPlots/plots.rml" /> 
 
 </TRestRun>
@@ -72,7 +78,7 @@
 
 <TRestProcessRunner name="restSimAnalysis" title="restSimAnalysis">
 
-    <!-- <parameter name="inputFile" value="${HOME}/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th232_CapBottomCentre/Run_SIMULATION_Th232fromCapBottomCentre_-0001_Version_2.29.root"/> -->
+    <!-- <parameter name="inputFile" value="/home/cristian/RPE_IAXO_REST_v2.2.10/data/IAXOD0/Argon_AGET_closer/Th232_CapBottomCentre/Run_SIMULATION_Th232fromCapBottomCentre_-0001_Version_2.29.root"/> -->
 
 
 
