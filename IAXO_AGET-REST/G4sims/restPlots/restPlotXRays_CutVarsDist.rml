@@ -113,32 +113,32 @@
 
 <plot name="N Tracks" title="Number of tracks" xlabel="Tracks" ylabel="Counts" logscale="false" value="ON" >
     <!-- Track plot -->
-    <variable name="tckAna_nTracks_XYZ" range="(1,10)" nbins="10" />
+    <variable name="tckAna_nTracks_XYZ" range="(1,4)" nbins="4" />
 </plot>
 
 <plot name="XY^2 Sigma" title="XY^2 Sigma" xlabel="XY^2 sigma(keV)" ylabel="Counts" logscale="false" value="ON" >
     <!-- XY^2 Sigma plot -->
-    <variable name="hitsAna_xy2Sigma" range="(0,5)" nbins="100" />
+    <variable name="hitsAna_xy2Sigma" range="(0,2)" nbins="100" />
 </plot>
 
 <plot name="Z^2 Sigma" title="Z^2 Sigma" xlabel="Z^2 sigma(keV)" ylabel="Counts" logscale="false" value="ON" >
     <!-- Z^2 Sigma plot -->
-    <variable name="hitsAna_z2Sigma" range="(0,5)" nbins="100" />
+    <variable name="hitsAna_z2Sigma" range="(0,2)" nbins="100" />
 </plot>
 
 <plot name="XY Sigma balance" title="XY Sigma balance" xlabel="XY sigma balance" ylabel="Counts" logscale="false" value="ON" >
     <!-- XY Sigma balance plot -->
-    <variable name="hitsAna_xySigmaBalance" range="(-5,5)" nbins="100" />
+    <variable name="hitsAna_xySigmaBalance" range="(-2,2)" nbins="100" />
 </plot>
 
 <plot name="XY Skew" title="XY Skewness" xlabel="Energy(keV)" ylabel="Counts" logscale="false" value="ON" >
     <!-- XY Skew plot -->
-    <variable name="hitsAna_xySkew" range="(-5,5)" nbins="100" />
+    <variable name="hitsAna_xySkew" range="(-2,2)" nbins="100" />
 </plot>
 
 <plot name="Z Skew" title="Z Skewness" xlabel="Energy(keV)" ylabel="Counts" logscale="false" value="ON" >
     <!-- Z Skew plot -->
-    <variable name="hitsAna_zSkew" range="(-5,5)" nbins="100" />
+    <variable name="hitsAna_zSkew" range="(-3,3)" nbins="100" />
 </plot>
 
 
